@@ -155,7 +155,7 @@ Describe the distribution of final account balances across 100 simulations. Repo
 
 ```{python}
 #| echo: false
-#| include: false
+#| include: True
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -187,7 +187,7 @@ mean_val, median_val, prob_profit
 ```{python}
 
 #| echo: false
-#| include: false
+#| include: true
 
 plt.hist(final_wealth, bins=20)
 plt.title("Distribution of Final Wealth (100 Simulations)")
@@ -249,7 +249,7 @@ Instead of having the full balance at risk with each coin flip, assume only 25% 
 ```{python}
 
 #| echo: false
-#| include: false
+#| include: true
 
 np.random.seed(42)
 
@@ -277,7 +277,7 @@ np.mean(final_wealth_25), np.median(final_wealth_25), np.mean(final_wealth_25 > 
 ```
 ```{python}
 #| echo: false
-#| include: false
+#| include: true
 
 plt.hist(final_wealth_25, bins=20)
 plt.title("Distribution (25% Betting Strategy)")
