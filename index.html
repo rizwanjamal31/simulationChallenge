@@ -123,7 +123,7 @@ Figure&nbsp;1: Generative DAG model for the investment game showing how wealth e
 <blockquote class="blockquote">
 <p><em>To better understand how wealth evolves over time, I simulated a single path of the investment game. Since outcomes depend on random coin flips, each simulation produces a different trajectory, illustrating the variability of possible results.</em></p>
 </blockquote>
-<div id="6e2fc334" class="cell" data-execution_count="5">
+<div id="c50b9a77" class="cell" data-execution_count="5">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -150,6 +150,22 @@ Figure&nbsp;1: Generative DAG model for the investment game showing how wealth e
 <blockquote class="blockquote">
 <p><em>To better understand the range of possible outcomes, I simulated the investment game 100 times. Each simulation represents a different sequence of coin flips, allowing us to observe the distribution of final wealth outcomes rather than relying on a single path.</em></p>
 </blockquote>
+<div id="e3eaf95d" class="cell" data-execution_count="7">
+<div class="cell-output cell-output-display" data-execution_count="7">
+<pre><code>(np.float64(67510.27536926958),
+ np.float64(2153.693963075556),
+ np.float64(0.23))</code></pre>
+</div>
+</div>
+<div id="16f276e5" class="cell" data-execution_count="8">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/cell-9-output-1.png" width="585" height="449" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 <blockquote class="blockquote">
 <p><em>The above analysis shows that across 100 simulations, the average final wealth is approximately $67510.3, while the median is only $2,153.7, which is dramatically lower than the mean. This large gap indicates a highly right-skewed distribution, where a small number of extremely large outcomes pull the average upward.</em></p>
 </blockquote>
@@ -188,6 +204,22 @@ Figure&nbsp;1: Generative DAG model for the investment game showing how wealth e
 <blockquote class="blockquote">
 <p><em>To reduce risk, I analyzed a modified strategy where only 25% of the total wealth is exposed to the coin flip each year, rather than risking the entire balance.</em></p>
 </blockquote>
+<div id="de749adf" class="cell" data-execution_count="11">
+<div class="cell-output cell-output-display" data-execution_count="11">
+<pre><code>(np.float64(53567.86390992706),
+ np.float64(40925.78815633591),
+ np.float64(0.68))</code></pre>
+</div>
+</div>
+<div id="5a70c2d9" class="cell" data-execution_count="12">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/cell-13-output-1.png" width="593" height="431" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 <blockquote class="blockquote">
 <p><em>Under the modified strategy, the average final wealth is approximately $53,568, while the median is $40,926, which is much closer to the mean compared to the original game. This suggests a more balanced and less skewed distribution of outcomes.</em></p>
 </blockquote>
