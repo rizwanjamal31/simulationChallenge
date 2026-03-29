@@ -104,7 +104,7 @@ Narrate and visualize what happens to your account balance over the course of on
 > *To better understand how wealth evolves over time, I simulated a single path of the investment game. Since outcomes depend on random coin flips, each simulation produces a different trajectory, illustrating the variability of possible results.*
 ```{python}
 #| echo: false
-#| include: false
+#| include: True
 
 import numpy as np
 import matplotlib.pyplot as plt
